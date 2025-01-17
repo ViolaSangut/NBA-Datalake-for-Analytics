@@ -20,10 +20,16 @@ This is an automated NBA data lake that is going  to support some sports analyti
 3. enter the command nano .env and copy the contents of the .env file .
 4. After saving the two files, run the command python3 setup_nba_data_lake.py to run the python code.
 5. Confirm the creation of the S3 bucket.
-6. Go to the Athena and enter the following query, make sure to select the correct Glue database.
-
-   <P>SELECT FirstName, LastName, Position, Team</P>.
+6. Go to the Athena and run the following query, make sure to select the correct Glue database. You should get some results in the 
+   <P>SELECT FirstName, LastName, Position, Team</P>
    <P>FROM nba_players</P>
    <P>WHERE Position = 'PG';</P>
+7. To visualize data from Athena using AWS QuickSight, Open a standard account and create a **New Analysis**.
+8. Select New dataset and select Athena as the source.
+9. Select the database and proceed to visualize the data.
+10. You can also use an SQL query to create a specific dataset and proceed to visualize the reqults.
+
+<p>For a more detailed documetation of the project, visit </p>
+
 
    
