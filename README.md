@@ -32,7 +32,7 @@ This is an automated NBA data lake that is going  to support some sports analyti
 1. log into your AWS Console and in the cloudshell, use the following command to Create a file: `nano setup_nba_data_lake.py`
 2. Paste your Python script from src/setup_nba_data_lake.py.
 3. Create an `.env` file: `nano .env` and paste your .env details.
-4. After saving the two files, run the command `python3 setup_nba_data_lake.py` to run the python code.
+4. After saving the two files, run the command `python3 setup_nba_data_lake.py`.
 5. Confirm the creation of the S3 bucket.
 6. Go to the Athena and run the following query, make sure to select the correct Glue database.  
    ```sql
